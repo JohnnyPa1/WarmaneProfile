@@ -1,0 +1,14 @@
+#home-page{
+    #home-bg {
+        img{
+            position: absolute;
+            top: 0;
+            right: -25%;
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,83 @@
+@import url("https://fonts.cdnfonts.com/css/expressway");
+
+:root::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgb(41, 128, 185),
+    rgb(109, 213, 250),
+    rgb(255, 255, 255)
+  );
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.expressway {
+  font-family: "Expressway Rg", sans-serif;
+}
+
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+#main-nav {
+  width: 20%;
+  .navbar-brand {
+    font-size: 4rem;
+    i {
+      color: rgba(100, 149, 237, 1);
+    }
+  }
+
+  .btn {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .btn:hover {
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: rgba(100, 149, 237, 1);
+  }
+
+  button:disabled {
+    border: 0;
+  }
+
+  .button-group{
+    width: fit-content;
+  }
+}
+
+.animate-fade-out {
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    right: -25%;
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    right: -100%;
+    display: none;
+  }
+}
+
+.blury{
+  filter: blur(4px);
+}
