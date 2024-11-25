@@ -4,6 +4,7 @@ const buttonGroup = $("#main-nav-buttons");
 const waListButton = $("#waList");
 const waList = $("#wa-list");
 const showWa = $("#showWa");
+const helpWa = $("#helpwa");
 
 buttonGroup.children().on("click", function (e) {
   e.preventDefault();
@@ -56,20 +57,14 @@ function getCopyButton(){
   async function loadButton(){
     console.log('waiting for button to load');
     var copyBTN = await getCopyButton();
-    copyBTN.prop("disabled",false)
+    copyBTN.prop("disabled",false);
+    copyBTN.css("filter","grayscale(0)");
     copyBTN.on('click',function(){
       dataBase[displayWA].copyString();
     })
   }
   loadButton();
 }
-
-
-
-
-
-
-
 
 $("body").on("keydown",function(event){
   if(event.which == 27 || event.which == 32){
@@ -110,3 +105,4 @@ waListButton.on("click", function (e) {
     display(targetWA);
   });
 });
+
