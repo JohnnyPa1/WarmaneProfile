@@ -37,6 +37,7 @@ class WaCard {
 
   copyString() {
     navigator.clipboard.writeText(this.string);
+    alert('Import string copied.')
   }
 }
 
