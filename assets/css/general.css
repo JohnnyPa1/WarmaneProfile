@@ -81,3 +81,7 @@ body {
 .blury{
   filter: blur(4px);
 }
+
+#justforthedisplay{
+  display: none;
+}

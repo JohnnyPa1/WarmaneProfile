@@ -1,0 +1,100 @@
+{
+    "addon": [
+        {
+            "id":"dbm",
+            "name": "DBM",
+            "description": "DBM Warmanere"
+        },
+        {
+            "id":"details",
+            "name":"Details",
+            "description":"Részletes combat log: DPS, Healing, Threat, Death log stb."
+        },
+        {
+            "id":"addonloader",
+            "name": "Addon Loader",
+            "description": "In-Game addon ki/be kapcsolás, szükséges hozzá az Addon Control Panel"
+        },
+        {
+            "id":"acp",
+            "name":"Addon Control Panel",
+            "description":"In-Game addon ki/be kapcsolás, szükséges hozzá az Addon Loader"
+        },
+        {
+            "id":"ace",
+            "name":"Ace könyvtárak",
+            "description":"WOTLK Könyvtárak, addonokhoz szükséges lehet"
+        },
+        {
+            "id":"atlasloot",
+            "name":"Atlasloot",
+            "description":"Dungeon/event/world droppok, loot-table"
+        },
+        {
+            "id":"bagnon",
+            "name":"Bagnon",
+            "description":"Bag-jeid egyberakja, egyéb hasznos funkciók"
+        },
+        {
+            "id":"blt",
+            "name":"BLT",
+            "description":"Raid CD track"
+        },
+        {
+            "id":"carbonite",
+            "name":"Carbonite",
+            "description":"Kényelmi funkciók, interaktív minimap, questfigyelő, gathering route"
+        },
+        {
+            "id":"elvui",
+            "name":"ELVUI",
+            "description":"Teljesen friss UI, full személyre-szabható, több infó majd a UI szekcióban"
+        },
+        {
+            "id":"gearscore",
+            "name":"Gearscore",
+            "description":"GS addon"
+        },
+        {
+            "id":"healbot",
+            "name":"HealBot",
+            "description":"Raidframe, custom bindelhető gombok amik csak a raidframen belül működnek"
+        },
+        {
+            "id":"krt",
+            "name":"KRT",
+            "description":"Raid-Roll addon"
+        },
+        {
+            "id":"pallypower",
+            "name":"PallyPower",
+            "description":"Paladinok dolgait egyszerűsítő addon, előre beállitott buff order/aura order stb."
+        },
+        {
+            "id":"postal",
+            "name":"Postal",
+            "description":"Postal addon, upgradelt mailbox"
+        },
+        {
+            "id":"selljunk",
+            "name":"SellJunk",
+            "description":"Szürke itemeket egy gombnyomással eladja vendorba"
+        },
+        {
+            "id":"skada",
+            "name":"Skada",
+            "description":"Dps,healing done stb. mérő"
+        },
+        {
+            "id":"wa",
+            "name":"WeakAura",
+            "description":"Maga a WA addon, mindent is lehet trackelni"
+        },
+        {
+            "id":"xct",
+            "name":"xCT+",
+            "description":"Floating combat text"
+        }
+
+    ]
+}
