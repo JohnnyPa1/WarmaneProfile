@@ -94,6 +94,11 @@
             "id":"xct",
             "name":"xCT+",
             "description":"Floating combat text"
+        },
+        {
+            "id":"dressme",
+            "name":"DressMe",
+            "description":"Tmog készítő"
         }
 
     ]
