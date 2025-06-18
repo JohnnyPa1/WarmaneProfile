@@ -3,12 +3,22 @@
         {
             "id":"dbm",
             "name": "DBM",
-            "description": "DBM Warmanere"
+            "description": "DBM Warmanere, 2025.03.12 ver"
+        },
+        {
+            "id":"wa",
+            "name":"WeakAura",
+            "description":"WA 5.19.10"
+        },
+        {
+            "id":"elvui",
+            "name":"ELVUI",
+            "description":"Teljesen friss UI, full személyre-szabható, Profilért DC"
         },
         {
             "id":"details",
             "name":"Details",
-            "description":"Részletes combat log: DPS, Healing, Threat, Death log stb."
+            "description":"Részletes combat log: DPS, Healing, Threat, Death log stb. Profilért DC"
         },
         {
             "id":"addonloader",
@@ -46,11 +56,6 @@
             "description":"Kényelmi funkciók, interaktív minimap, questfigyelő, gathering route"
         },
         {
-            "id":"elvui",
-            "name":"ELVUI",
-            "description":"Teljesen friss UI, full személyre-szabható, több infó majd a UI szekcióban"
-        },
-        {
             "id":"gearscore",
             "name":"Gearscore",
             "description":"GS addon"
@@ -84,11 +89,6 @@
             "id":"skada",
             "name":"Skada",
             "description":"Dps,healing done stb. mérő"
-        },
-        {
-            "id":"wa",
-            "name":"WeakAura",
-            "description":"Maga a WA addon, mindent is lehet trackelni"
         },
         {
             "id":"xct",
