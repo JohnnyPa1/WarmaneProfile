@@ -18,54 +18,64 @@
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/wa-list.css" />
     <link rel="stylesheet" href="./assets/css/addon.css" />
-    <link rel="stylesheet" href="./assets/css/loader.css">
+    <link rel="stylesheet" href="./assets/css/loader.css" />
   </head>
   <body>
-  <div class="loader"></div>  
-  <section id="justforthedisplay">  
-    <section id="main-nav" class="sticky-top expressway">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://discord.com/users/579556094817599500" target="_blank"
-         ><i class="fa-brands fa-discord"></i> Johnny</a
-        >
-        <div class="container-fluid button-group" id="main-nav-buttons">
-          <button class="btn mainbutton" id="waList">
-            Weakauras 5.19.10 <i class="fa-solid fa-w"></i><i class="fa-solid fa-a"></i>
-          </button>
-          <button class="btn mainbutton" id="addonList">
-            Addons <i class="fa-solid fa-file"></i>
-          </button>
-          <button class="btn mainbutton" id="uiList" disabled>
-            UI <i class="fa-solid fa-image"></i>
-          </button>
-          <!-- <button class="btn mainbutton" disabled>More (in proccess)</button> -->
+    <div class="loader"></div>
+    <section id="justforthedisplay">
+      <section id="main-nav" class="sticky-top expressway">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://discord.com/users/579556094817599500"
+            target="_blank"
+            ><i class="fa-brands fa-discord"></i> Johnny</a
+          >
+          <div class="container-fluid button-group" id="main-nav-buttons">
+            <button class="btn mainbutton" id="waList">
+              Weakauras 5.19.10 <i class="fa-solid fa-w"></i
+              ><i class="fa-solid fa-a"></i>
+            </button>
+            <button class="btn mainbutton" id="addonList">
+              Addons <i class="fa-solid fa-file"></i>
+            </button>
+            <button class="btn mainbutton" id="uiList" disabled>
+              UI <i class="fa-solid fa-image"></i>
+            </button>
+            <p id="last-updated"></p>
+            <!-- <button class="btn mainbutton" disabled>More (in proccess)</button> -->
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section id="home-page">
+        <div id="home-bg">
+          <img
+            id="home-bg-img"
+            src="./assets/images/lich-king-transparent.png"
+            alt="home-page-bg"
+          />
+        </div>
+      </section>
+
+      <section id="wa-list">
+        <h1>WA List CSAK 5.19.10</h1>
+        <h5>
+          CSAK 5.19.10. DISCLAIMER: Nem minden WeakAura saját készítésű!<br
+            \
+          />Az eredeti WeakAurák készitői (legyen ez olyan WeakAura amin
+          változtattam vagy<br \ />
+          olyan amelyiken semmit) megtalálhatók Importolás után az "Information"
+          fülben.<br \ />Custom WA-ért PM Discordon.
+        </h5>
+        <div class="container border" id="showWa"></div>
+      </section>
+
+      <section id="addon-list">
+        <h1>Addon-On List</h1>
+        <div class="container border" id="showAddon"></div>
+      </section>
     </section>
-
-    <section id="home-page">
-      <div id="home-bg">
-        <img
-          id="home-bg-img"
-          src="./assets/images/lich-king-transparent.png"
-          alt="home-page-bg"
-        />
-      </div>
-    </section>
-
-    <section id="wa-list">
-      <h1>WA List CSAK 5.19.10</h1>
-      <h5>CSAK 5.19.10. DISCLAIMER: Nem minden WeakAura saját készítésű!<br \>Az eredeti WeakAurák készitői (legyen ez olyan WeakAura amin változtattam vagy<br \> olyan amelyiken semmit) megtalálhatók Importolás után az "Information" fülben.<br \>Custom WA-ért PM Discordon.</h5>
-      <div class="container border" id="showWa"></div>
-    </section>
-
-    <section id="addon-list">
-      <h1>Addon-On List</h1>
-      <div class="container border" id="showAddon"></div>
-    </section>
-
-
-  </section>  
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -77,5 +87,21 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./js/main.js"></script>
+    <script>
+      fetch(
+        "https://api.github.com/repos/JohnnyPa1/WarmaneProfile/commits?per_page=1"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          const date = new Date(data[0].commit.committer.date);
+          document.getElementById("last-updated").textContent =
+            "Last updated: " + date.toDateString();
+        })
+        .catch((error) => {
+          console.error("Error fetching commit data:", error);
+          document.getElementById("last-updated").textContent =
+            "Could not fetch update date.";
+        });
+    </script>
   </body>
 </html>
