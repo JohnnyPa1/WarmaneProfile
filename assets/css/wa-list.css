@@ -18,7 +18,7 @@
     border-radius: 0.375rem;
   }
   .waCard {
-    width: 22rem;
+    width: 30rem;
     margin-top: 2%;
     margin-left: 1%;
     margin-right: 1%;
@@ -32,6 +32,10 @@
   }
   i{
     font-size: 1.8rem;
+  }
+  #backend{
+    border-color: red;
+    border-width: 5px;
   }
 }
 
